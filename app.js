@@ -11,6 +11,7 @@ var users = require('./routes/users');
 var app = express();
 
 // view engine setup
+app.listen(process.env.PORT, process.env.IP);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
